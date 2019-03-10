@@ -95,6 +95,12 @@
       }
     }
 
+    function resetScore() {
+      score = 0;
+      document.querySelector("#score").innerHTML = "Score: " + score;
+      document.querySelector("#verification").innerHTML = "Pick a letter!";
+    }
+
     //function that checks word completion and number of guesses
     function checkCompletion() {
       // If you've guessed all the letters in a word
@@ -103,10 +109,9 @@
         getNewWord();
       }
       if (numofguesses === 0) {
-        alert("No more guesses! You lose!");
-        Score = 0;
-        document.querySelector("#score").innerHTML = "Score: "+ score;  
+        alert("No more guesses! You lose!");  
         getNewWord();
+        resetScore();
         return;
       }
     }
