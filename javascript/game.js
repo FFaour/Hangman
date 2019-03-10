@@ -1,10 +1,10 @@
-<script type="text/javascript">
+
 
     // VARIABLES
     // ==========================================================================
 
     // The array of words for our hangman game.
-    var words = ["chocolate", "polearm", "noose", "coding", "trash", "simulate", "project", "javascript", 'dice", "dungeon", "dragon", sword", "spear","noose", "goblin", "kobold", "beholder", "cleric", "fighter", "wizard"];
+    var words = ["chocolate", "polearm", "noose", "coding", "trash", "simulate", "project", "javascript", "dice", "dungeon", "dragon", "sword", "spear","noose", "goblin", "kobold", "beholder", "cleric", "fighter", "wizard"];
     // all possible accepted keypresses
     var alphabet = [ "a", "b", "c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z" ];
     // We start the game with a score of 0.
@@ -149,4 +149,3 @@
       }
 
     }     
-  </script>
