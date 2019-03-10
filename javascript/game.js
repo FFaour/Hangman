@@ -80,6 +80,7 @@
 
     function resetScore() {
       score = 0;
+      wordsGuessed = 0;
       document.querySelector("#score").innerHTML = "Score: " + score;
       document.querySelector("#verification").innerHTML = "Pick a letter!";
     }
@@ -89,6 +90,7 @@
       // If you've guessed all the letters in a word
       if (lettersGuessedCorrectly === wordLength) {
         document.querySelector("#verification").innerHTML = "You have guessed "+ wordSelected +"!";
+        wordsGuessed ++;
         getNewWord();
       }
       if (numofguesses === 0) {
